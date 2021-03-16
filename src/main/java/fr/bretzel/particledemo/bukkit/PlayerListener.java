@@ -14,11 +14,11 @@ public class PlayerListener implements Listener {
     public void onPlayerMove(PlayerMoveEvent event) {
         final Player player = event.getPlayer();
         for (int i = 0; i < 500; i++) {
-            player.spawnParticle(Particle.REDSTONE, player.getLocation().getX(), player.getLocation().getY() + player.getEyeHeight() + (double) i * 0.1, player.getLocation().getZ(),
-                    0,
-                    0, 0, 0,
-                    0,
-                    new org.bukkit.Particle.DustOptions(Color.fromBGR(60, 55, 255), 0.1F));
+            player.spawnParticle(Particle.REDSTONE, player.getLocation().getX(), player.getLocation().getY() + player.getEyeHeight() + (double) i * 0.1, player.getLocation().getZ(), //Coordinate
+                    0, //Particle Count
+                    0, 0, 0, //Offset
+                    0, //Speed
+                    new org.bukkit.Particle.DustOptions(Color.fromBGR(60, 55, 255), 0.1F)); //Color and size
         }
     }
 }

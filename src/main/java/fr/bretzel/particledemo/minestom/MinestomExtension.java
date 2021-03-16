@@ -16,7 +16,7 @@ public class MinestomExtension extends Extension {
             final Player player = event.getPlayer();
             for (int i = 0; i < 500; i++) {
                 ParticlePacket particlePacket = ParticleCreator.createParticlePacket(Particle.DUST, true,
-                        player.getPosition().getX(), player.getPosition().getY() + player.getEyeHeight() + (double) i * 0.1, player.getPosition().getZ(),
+                        player.getPosition().getX(), player.getPosition().getY() + player.getEyeHeight() + (double) i * 0.1, player.getPosition().getZ(), //Coordinate
                         0, 0, 0, 0, 0, binaryWriter -> {
                             binaryWriter.writeFloat((float) 255 / 255);//R
                             binaryWriter.writeFloat((float) 55 / 255);//G

@@ -1,0 +1,4 @@
+{
+  "entrypoint": "fr.bretzel.particledemo.minestom.MinestomExtension",
+  "name": "ParticleBug"
+}
