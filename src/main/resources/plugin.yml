@@ -1,0 +1,3 @@
+name: ParticleBug
+version: 1.0
+main: fr.bretzel.particledemo.bukkit.BukkitPlugin
